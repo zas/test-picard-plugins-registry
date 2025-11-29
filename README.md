@@ -7,20 +7,21 @@ This repository contains multiple registry files for testing Picard plugin syste
 ```bash
 # Test multi-ref auto-selection
 export PICARD_PLUGIN_REGISTRY_URL="https://raw.githubusercontent.com/zas/test-picard-plugins-registry/refs/heads/main/registry-multi-ref.json"
-picard plugins --refresh-registry
+picard plugins --refresh-registry --browse
 picard plugins --install view-script-variables
-# Should show: "Found View script variables in registry (using ref: picard-v3)"
+# Should show: "Found View script variables in registry (using ref: main)"
 
 # Test blacklist
 export PICARD_PLUGIN_REGISTRY_URL="https://raw.githubusercontent.com/zas/test-picard-plugins-registry/refs/heads/main/registry-blacklist.json"
-picard plugins --refresh-registry
-picard plugins --check-blacklist https://github.com/badactor/malicious-plugin
+picard plugins --refresh-registry --check-blacklist https://github.com/badactor/malicious-plugin
 # Should show: ✗ URL is blacklisted
 
 # Reset to default
 unset PICARD_PLUGIN_REGISTRY_URL
 picard plugins --refresh-registry
 ```
+
+**Tip:** `--refresh-registry` can be combined with other commands (e.g., `--refresh-registry --browse`) to refresh the cache and immediately use the new registry.
 
 ---
 
