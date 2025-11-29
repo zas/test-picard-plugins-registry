@@ -1,0 +1,89 @@
+{
+  "api_version": "3.0",
+  "last_updated": "2025-11-29T09:00:00Z",
+  "plugins": [
+    {
+      "id": "view-script-variables",
+      "uuid": "891a96e7-2b0a-491f-9f49-2ce2da225e00",
+      "name": "View script variables",
+      "description": "Display a dialog box listing the metadata variables for the track / file.",
+      "git_url": "https://github.com/rdswift/picard-v3-plugins",
+      "refs": [
+        {
+          "name": "main",
+          "description": "For Picard 4.x",
+          "min_api_version": "4.0"
+        },
+        {
+          "name": "picard-v3",
+          "description": "For Picard 3.x",
+          "min_api_version": "3.0",
+          "max_api_version": "3.99"
+        }
+      ],
+      "categories": ["ui"],
+      "trust_level": "trusted",
+      "authors": ["Sophist", "Bob Swift"],
+      "added_at": "2025-11-27T10:00:00Z",
+      "updated_at": "2025-11-29T09:00:00Z"
+    },
+    {
+      "id": "official-plugin",
+      "uuid": "official-uuid-1111-2222-3333-4444",
+      "name": "Official Plugin",
+      "description": "Official plugin maintained by Picard team",
+      "git_url": "https://github.com/metabrainz/picard-plugin-official",
+      "refs": [
+        {
+          "name": "main",
+          "min_api_version": "3.0"
+        }
+      ],
+      "categories": ["metadata"],
+      "trust_level": "official",
+      "authors": ["MusicBrainz Picard Team"],
+      "added_at": "2025-11-01T10:00:00Z",
+      "updated_at": "2025-11-29T09:00:00Z"
+    },
+    {
+      "id": "community-plugin",
+      "uuid": "community-uuid-5555-6666-7777-8888",
+      "name": "Community Plugin",
+      "description": "Community plugin (not reviewed)",
+      "git_url": "https://github.com/community/plugin",
+      "refs": [
+        {
+          "name": "main",
+          "min_api_version": "3.0"
+        },
+        {
+          "name": "beta",
+          "description": "Beta testing",
+          "min_api_version": "3.0"
+        }
+      ],
+      "categories": ["scripting"],
+      "trust_level": "community",
+      "authors": ["Community Author"],
+      "added_at": "2025-11-15T10:00:00Z",
+      "updated_at": "2025-11-29T09:00:00Z"
+    }
+  ],
+  "blacklist": [
+    {
+      "url": "https://github.com/badactor/malicious",
+      "reason": "Contains malicious code",
+      "blacklisted_at": "2025-11-20T10:00:00Z"
+    },
+    {
+      "url_regex": "^https://github\\.com/badorg/.*",
+      "reason": "Entire organization blacklisted",
+      "blacklisted_at": "2025-11-22T10:00:00Z"
+    },
+    {
+      "uuid": "blacklisted-uuid-9999-aaaa-bbbb-cccc",
+      "reason": "Security vulnerability",
+      "blacklisted_at": "2025-11-23T10:00:00Z"
+    }
+  ]
+}

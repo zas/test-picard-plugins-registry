@@ -1,0 +1,46 @@
+{
+  "api_version": "3.0",
+  "last_updated": "2025-11-29T09:00:00Z",
+  "plugins": [
+    {
+      "id": "view-script-variables",
+      "uuid": "891a96e7-2b0a-491f-9f49-2ce2da225e00",
+      "name": "View script variables",
+      "description": "Display a dialog box listing the metadata variables for the track / file.",
+      "git_url": "https://github.com/rdswift/picard-v3-plugins",
+      "refs": [
+        {
+          "name": "main",
+          "min_api_version": "3.0"
+        }
+      ],
+      "categories": ["ui"],
+      "trust_level": "trusted",
+      "authors": ["Sophist", "Bob Swift"],
+      "added_at": "2025-11-27T10:00:00Z",
+      "updated_at": "2025-11-29T09:00:00Z"
+    }
+  ],
+  "blacklist": [
+    {
+      "url": "https://github.com/rdswift/picard-v3-plugins",
+      "reason": "TEST: Plugin blacklisted by URL for testing purposes",
+      "blacklisted_at": "2025-11-29T09:00:00Z"
+    },
+    {
+      "uuid": "891a96e7-2b0a-491f-9f49-2ce2da225e00",
+      "reason": "TEST: Plugin blacklisted by UUID for testing purposes",
+      "blacklisted_at": "2025-11-29T09:00:00Z"
+    },
+    {
+      "url": "https://github.com/badactor/malicious-plugin",
+      "reason": "Contains malicious code - DO NOT INSTALL",
+      "blacklisted_at": "2025-11-20T10:00:00Z"
+    },
+    {
+      "url_regex": "^https://github\\.com/badorg/.*",
+      "reason": "Entire organization blacklisted for malicious activity",
+      "blacklisted_at": "2025-11-22T10:00:00Z"
+    }
+  ]
+}

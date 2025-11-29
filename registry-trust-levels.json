@@ -1,0 +1,61 @@
+{
+  "api_version": "3.0",
+  "last_updated": "2025-11-29T09:00:00Z",
+  "plugins": [
+    {
+      "id": "view-script-variables",
+      "uuid": "891a96e7-2b0a-491f-9f49-2ce2da225e00",
+      "name": "View script variables",
+      "description": "Display a dialog box listing the metadata variables for the track / file.",
+      "git_url": "https://github.com/rdswift/picard-v3-plugins",
+      "refs": [
+        {
+          "name": "main",
+          "min_api_version": "3.0"
+        }
+      ],
+      "categories": ["ui"],
+      "trust_level": "trusted",
+      "authors": ["Sophist", "Bob Swift"],
+      "added_at": "2025-11-27T10:00:00Z",
+      "updated_at": "2025-11-29T09:00:00Z"
+    },
+    {
+      "id": "official-plugin-example",
+      "uuid": "official-uuid-1234-5678-90ab-cdef",
+      "name": "Official Plugin Example",
+      "description": "Example of an official plugin maintained by Picard team",
+      "git_url": "https://github.com/metabrainz/picard-plugin-example",
+      "refs": [
+        {
+          "name": "main",
+          "min_api_version": "3.0"
+        }
+      ],
+      "categories": ["metadata"],
+      "trust_level": "official",
+      "authors": ["MusicBrainz Picard Team"],
+      "added_at": "2025-11-01T10:00:00Z",
+      "updated_at": "2025-11-29T09:00:00Z"
+    },
+    {
+      "id": "community-plugin-example",
+      "uuid": "community-uuid-abcd-ef01-2345-6789",
+      "name": "Community Plugin Example",
+      "description": "Example of a community plugin (not reviewed)",
+      "git_url": "https://github.com/someuser/community-plugin",
+      "refs": [
+        {
+          "name": "main",
+          "min_api_version": "3.0"
+        }
+      ],
+      "categories": ["scripting"],
+      "trust_level": "community",
+      "authors": ["Community Author"],
+      "added_at": "2025-11-15T10:00:00Z",
+      "updated_at": "2025-11-29T09:00:00Z"
+    }
+  ],
+  "blacklist": []
+}

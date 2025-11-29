@@ -11,6 +11,12 @@
       "refs": [
         {
           "name": "main",
+          "description": "Main branch",
+          "min_api_version": "3.0"
+        },
+        {
+          "name": "test",
+          "description": "Test branch",
           "min_api_version": "3.0"
         }
       ],
